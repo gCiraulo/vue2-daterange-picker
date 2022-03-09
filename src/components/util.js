@@ -47,8 +47,8 @@ const last365 = () => {
 }
 
 const maxDateRange = () => {
-  let start = moment().subtract('8', 'years').startOf('year').toDate()
-  let end = moment().toDate()
+  let start = moment('2010-01-01').toDate()
+  let end = moment().subtract('1','day').toDate()
   return {'start': start, 'end': end}
 };
 
