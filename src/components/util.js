@@ -53,9 +53,7 @@ const maxDateRange = () => {
 };
 
 const today = () => {
-  let start = moment().startOf('day').toDate()
-  let end = moment().endOf('day').toDate()
-  return {'start': start, 'end': end}
+  return moment().toDate()
 }
 
 export { nextMonth, prevMonth, thisMonth, thisYear, lastWeek, lastMonth, today,last30,last365,maxDateRange}
